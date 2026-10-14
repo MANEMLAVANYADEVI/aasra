@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Resources | Spandhana Care Connect</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <div class="container nav-container">
+
+            <a href="index.html" class="logo">
+
+                <span class="logo-icon">S</span>
+
+                <span>Spandhana</span>
+
+            </a>
+
+
+            <nav class="navbar">
+
+                <a href="index.html" class="nav-link">
+                    Home
+                </a>
+
+                <a href="dashboard.html" class="nav-link">
+                    Dashboard
+                </a>
+
+                <a href="beneficiaries.html" class="nav-link">
+                    Beneficiaries
+                </a>
+
+                <a href="healthcare.html" class="nav-link">
+                    Healthcare
+                </a>
+
+                <a href="volunteers.html" class="nav-link">
+                    Volunteers
+                </a>
+
+                <a href="resources.html" class="nav-link">
+                    Resources
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- MAIN -->
+
+    <main class="resource-page">
+
+        <div class="container">
+
+
+            <!-- PAGE HEADING -->
+
+            <div class="resource-heading">
+
+                <div>
+
+                    <span class="section-tag">
+                        Resources & Donations
+                    </span>
+
+                    <h1>
+                        Manage NGO Resources
+                    </h1>
+
+                    <p>
+                        Track equipment, supplies, educational
+                        materials and other resources required
+                        by the organisation.
+                    </p>
+
+                </div>
+
+
+                <button
+                    class="btn btn-primary"
+                    id="showResourceBtn">
+
+                    + Add Resource
+
+                </button>
+
+            </div>
+
+
+            <!-- RESOURCE FORM -->
+
+            <section
+                class="resource-form-section"
+                id="resourceFormSection">
+
+                <div class="form-header">
+
+                    <span class="section-tag">
+                        New Resource
+                    </span>
+
+                    <h2>
+                        Add Resource
+                    </h2>
+
+                </div>
+
+
+                <form id="resourceForm">
+
+
+                    <!-- RESOURCE NAME -->
+
+                    <div class="form-group">
+
+                        <label for="resourceName">
+                            Resource Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="resourceName"
+                            placeholder="Example: Wheelchair"
+                            required>
+
+                    </div>
+
+
+                    <!-- CATEGORY -->
+
+                    <div class="form-group">
+
+                        <label for="resourceCategory">
+                            Category
+                        </label>
+
+                        <select
+                            id="resourceCategory"
+                            required>
+
+                            <option value="">
+                                Select category
+                            </option>
+
+                            <option value="Medical Equipment">
+                                Medical Equipment
+                            </option>
+
+                            <option value="Educational">
+                                Educational
+                            </option>
+
+                            <option value="Food">
+                                Food & Nutrition
+                            </option>
+
+                            <option value="Clothing">
+                                Clothing
+                            </option>
+
+                            <option value="Sports">
+                                Sports & Activities
+                            </option>
+
+                            <option value="Other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- REQUIRED QUANTITY -->
+
+                    <div class="form-group">
+
+                        <label for="requiredQuantity">
+                            Required Quantity
+                        </label>
+
+                        <input
+                            type="number"
+                            id="requiredQuantity"
+                            min="1"
+                            placeholder="Enter quantity"
+                            required>
+
+                    </div>
+
+
+                    <!-- AVAILABLE QUANTITY -->
+
+                    <div class="form-group">
+
+                        <label for="availableQuantity">
+                            Available Quantity
+                        </label>
+
+                        <input
+                            type="number"
+                            id="availableQuantity"
+                            min="0"
+                            placeholder="Enter available quantity"
+                            required>
+
+                    </div>
+
+
+                    <!-- SOURCE -->
+
+                    <div class="form-group">
+
+                        <label for="resourceSource">
+                            Source
+                        </label>
+
+                        <select
+                            id="resourceSource"
+                            required>
+
+                            <option value="">
+                                Select source
+                            </option>
+
+                            <option value="Donation">
+                                Donation
+                            </option>
+
+                            <option value="Purchase">
+                                Purchase
+                            </option>
+
+                            <option value="NGO Stock">
+                                NGO Stock
+                            </option>
+
+                            <option value="Other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- PRIORITY -->
+
+                    <div class="form-group">
+
+                        <label for="resourcePriority">
+                            Priority
+                        </label>
+
+                        <select
+                            id="resourcePriority"
+                            required>
+
+                            <option value="">
+                                Select priority
+                            </option>
+
+                            <option value="High">
+                                High
+                            </option>
+
+                            <option value="Medium">
+                                Medium
+                            </option>
+
+                            <option value="Low">
+                                Low
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- NOTES -->
+
+                    <div class="form-group full-width">
+
+                        <label for="resourceNotes">
+                            Notes
+                        </label>
+
+                        <textarea
+                            id="resourceNotes"
+                            rows="4"
+                            placeholder="Add additional information">
+                        </textarea>
+
+                    </div>
+
+
+                    <!-- BUTTONS -->
+
+                    <div class="form-buttons">
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary">
+
+                            Save Resource
+
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="btn btn-secondary"
+                            id="cancelResourceBtn">
+
+                            Cancel
+
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </section>
+
+
+            <!-- RESOURCE LIST -->
+
+            <section class="resource-list-section">
+
+                <div class="list-header">
+
+                    <div>
+
+                        <span class="section-tag">
+                            Resource Inventory
+                        </span>
+
+                        <h2>
+                            Available Resources
+                        </h2>
+
+                    </div>
+
+
+                    <div class="search-box">
+
+                        <input
+                            type="text"
+                            id="searchResource"
+                            placeholder="Search resources...">
+
+                    </div>
+
+                </div>
+
+
+                <div class="resource-table">
+
+
+                    <!-- TABLE HEADER -->
+
+                    <div class="resource-table-header">
+
+                        <span>Resource</span>
+
+                        <span>Category</span>
+
+                        <span>Required</span>
+
+                        <span>Available</span>
+
+                        <span>Priority</span>
+
+                        <span>Status</span>
+
+                    </div>
+
+
+                    <!-- SAMPLE RESOURCE -->
+
+                    <div class="resource-row">
+
+                        <span>
+                            Wheelchairs
+                        </span>
+
+                        <span>
+                            Medical Equipment
+                        </span>
+
+                        <span>
+                            10
+                        </span>
+
+                        <span>
+                            6
+                        </span>
+
+                        <span>
+                            High
+                        </span>
+
+                        <span class="status pending">
+                            Needed
+                        </span>
+
+                    </div>
+
+
+                    <!-- SAMPLE RESOURCE -->
+
+                    <div class="resource-row">
+
+                        <span>
+                            Educational Kits
+                        </span>
+
+                        <span>
+                            Educational
+                        </span>
+
+                        <span>
+                            25
+                        </span>
+
+                        <span>
+                            20
+                        </span>
+
+                        <span>
+                            Medium
+                        </span>
+
+                        <span class="status upcoming">
+                            Available
+                        </span>
+
+                    </div>
+
+
+                    <!-- SAMPLE RESOURCE -->
+
+                    <div class="resource-row">
+
+                        <span>
+                            Sports Equipment
+                        </span>
+
+                        <span>
+                            Sports
+                        </span>
+
+                        <span>
+                            15
+                        </span>
+
+                        <span>
+                            15
+                        </span>
+
+                        <span>
+                            Low
+                        </span>
+
+                        <span class="status completed">
+                            Complete
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+            <!-- RESOURCE INFO -->
+
+            <section class="resource-info">
+
+
+                <div class="resource-info-card">
+
+                    <div class="resource-info-icon">
+                        📦
+                    </div>
+
+                    <h3>
+                        Inventory Tracking
+                    </h3>
+
+                    <p>
+                        Keep track of resources required and
+                        currently available to the organisation.
+                    </p>
+
+                </div>
+
+
+                <div class="resource-info-card">
+
+                    <div class="resource-info-icon">
+                        💰
+                    </div>
+
+                    <h3>
+                        Donation Support
+                    </h3>
+
+                    <p>
+                        Identify resource shortages and understand
+                        where donations can provide support.
+                    </p>
+
+                </div>
+
+
+                <div class="resource-info-card">
+
+                    <div class="resource-info-icon">
+                        📊
+                    </div>
+
+                    <h3>
+                        Resource Planning
+                    </h3>
+
+                    <p>
+                        Use inventory information to plan future
+                        purchases and resource requirements.
+                    </p>
+
+                </div>
+
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Spandhana Care Connect |
+                Academic Project
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

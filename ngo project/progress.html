@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Progress Monitoring | Spandhana Care Connect</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <div class="container nav-container">
+
+            <a href="index.html" class="logo">
+
+                <span class="logo-icon">S</span>
+
+                <span>Spandhana</span>
+
+            </a>
+
+
+            <nav class="navbar">
+
+                <a href="index.html" class="nav-link">
+                    Home
+                </a>
+
+                <a href="dashboard.html" class="nav-link">
+                    Dashboard
+                </a>
+
+                <a href="beneficiaries.html" class="nav-link">
+                    Beneficiaries
+                </a>
+
+                <a href="healthcare.html" class="nav-link">
+                    Healthcare
+                </a>
+
+                <a href="volunteers.html" class="nav-link">
+                    Volunteers
+                </a>
+
+                <a href="resources.html" class="nav-link">
+                    Resources
+                </a>
+
+                <a href="sos.html" class="nav-link">
+                    Emergency
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- MAIN -->
+
+    <main class="progress-page">
+
+        <div class="container">
+
+
+            <!-- PAGE HEADING -->
+
+            <div class="progress-heading">
+
+                <div>
+
+                    <span class="section-tag">
+                        Disability Progress Monitoring
+                    </span>
+
+                    <h1>
+                        Track Individual Progress
+                    </h1>
+
+                    <p>
+                        Record regular assessments and monitor
+                        development across important support areas.
+                    </p>
+
+                </div>
+
+
+                <button
+                    class="btn btn-primary"
+                    id="showProgressBtn">
+
+                    + Add Assessment
+
+                </button>
+
+            </div>
+
+
+            <!-- PROGRESS FORM -->
+
+            <section
+                class="progress-form-section"
+                id="progressFormSection">
+
+                <div class="form-header">
+
+                    <span class="section-tag">
+                        New Assessment
+                    </span>
+
+                    <h2>
+                        Record Progress
+                    </h2>
+
+                </div>
+
+
+                <form id="progressForm">
+
+
+                    <!-- BENEFICIARY -->
+
+                    <div class="form-group">
+
+                        <label for="progressBeneficiary">
+                            Beneficiary Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="progressBeneficiary"
+                            placeholder="Enter beneficiary name"
+                            required>
+
+                    </div>
+
+
+                    <!-- DATE -->
+
+                    <div class="form-group">
+
+                        <label for="assessmentDate">
+                            Assessment Date
+                        </label>
+
+                        <input
+                            type="date"
+                            id="assessmentDate"
+                            required>
+
+                    </div>
+
+
+                    <!-- COMMUNICATION -->
+
+                    <div class="form-group">
+
+                        <label for="communicationLevel">
+                            Communication
+                        </label>
+
+                        <select
+                            id="communicationLevel"
+                            required>
+
+                            <option value="">
+                                Select level
+                            </option>
+
+                            <option value="Needs Support">
+                                Needs Support
+                            </option>
+
+                            <option value="Developing">
+                                Developing
+                            </option>
+
+                            <option value="Good">
+                                Good
+                            </option>
+
+                            <option value="Excellent">
+                                Excellent
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- SELF CARE -->
+
+                    <div class="form-group">
+
+                        <label for="selfCareLevel">
+                            Self-Care
+                        </label>
+
+                        <select
+                            id="selfCareLevel"
+                            required>
+
+                            <option value="">
+                                Select level
+                            </option>
+
+                            <option value="Needs Support">
+                                Needs Support
+                            </option>
+
+                            <option value="Developing">
+                                Developing
+                            </option>
+
+                            <option value="Good">
+                                Good
+                            </option>
+
+                            <option value="Excellent">
+                                Excellent
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- SOCIAL SKILLS -->
+
+                    <div class="form-group">
+
+                        <label for="socialSkillsLevel">
+                            Social Skills
+                        </label>
+
+                        <select
+                            id="socialSkillsLevel"
+                            required>
+
+                            <option value="">
+                                Select level
+                            </option>
+
+                            <option value="Needs Support">
+                                Needs Support
+                            </option>
+
+                            <option value="Developing">
+                                Developing
+                            </option>
+
+                            <option value="Good">
+                                Good
+                            </option>
+
+                            <option value="Excellent">
+                                Excellent
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- MOTOR SKILLS -->
+
+                    <div class="form-group">
+
+                        <label for="motorSkillsLevel">
+                            Motor Skills
+                        </label>
+
+                        <select
+                            id="motorSkillsLevel"
+                            required>
+
+                            <option value="">
+                                Select level
+                            </option>
+
+                            <option value="Needs Support">
+                                Needs Support
+                            </option>
+
+                            <option value="Developing">
+                                Developing
+                            </option>
+
+                            <option value="Good">
+                                Good
+                            </option>
+
+                            <option value="Excellent">
+                                Excellent
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- NOTES -->
+
+                    <div class="form-group full-width">
+
+                        <label for="progressNotes">
+                            Assessment Notes
+                        </label>
+
+                        <textarea
+                            id="progressNotes"
+                            rows="5"
+                            placeholder="Describe progress, observations or support required">
+                        </textarea>
+
+                    </div>
+
+
+                    <!-- BUTTONS -->
+
+                    <div class="form-buttons">
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary">
+
+                            Save Assessment
+
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="btn btn-secondary"
+                            id="cancelProgressBtn">
+
+                            Cancel
+
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </section>
+
+
+            <!-- PROGRESS LIST -->
+
+            <section class="progress-list-section">
+
+                <div class="list-header">
+
+                    <div>
+
+                        <span class="section-tag">
+                            Assessment Records
+                        </span>
+
+                        <h2>
+                            Recent Progress
+                        </h2>
+
+                    </div>
+
+
+                    <div class="search-box">
+
+                        <input
+                            type="text"
+                            id="searchProgress"
+                            placeholder="Search beneficiary...">
+
+                    </div>
+
+                </div>
+
+
+                <div class="progress-table">
+
+
+                    <!-- TABLE HEADER -->
+
+                    <div class="progress-table-header">
+
+                        <span>Beneficiary</span>
+
+                        <span>Date</span>
+
+                        <span>Communication</span>
+
+                        <span>Self-Care</span>
+
+                        <span>Social Skills</span>
+
+                        <span>Motor Skills</span>
+
+                    </div>
+
+
+                    <!-- SAMPLE RECORD -->
+
+                    <div class="progress-row">
+
+                        <span>
+                            Ananya
+                        </span>
+
+                        <span>
+                            20 Sep 2026
+                        </span>
+
+                        <span>
+                            Developing
+                        </span>
+
+                        <span>
+                            Good
+                        </span>
+
+                        <span>
+                            Developing
+                        </span>
+
+                        <span>
+                            Good
+                        </span>
+
+                    </div>
+
+
+                    <!-- SAMPLE RECORD -->
+
+                    <div class="progress-row">
+
+                        <span>
+                            Rahul
+                        </span>
+
+                        <span>
+                            18 Sep 2026
+                        </span>
+
+                        <span>
+                            Good
+                        </span>
+
+                        <span>
+                            Good
+                        </span>
+
+                        <span>
+                            Good
+                        </span>
+
+                        <span>
+                            Developing
+                        </span>
+
+                    </div>
+
+
+                    <!-- SAMPLE RECORD -->
+
+                    <div class="progress-row">
+
+                        <span>
+                            Meera
+                        </span>
+
+                        <span>
+                            15 Sep 2026
+                        </span>
+
+                        <span>
+                            Developing
+                        </span>
+
+                        <span>
+                            Developing
+                        </span>
+
+                        <span>
+                            Good
+                        </span>
+
+                        <span>
+                            Developing
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+            <!-- INFORMATION CARDS -->
+
+            <section class="progress-info">
+
+
+                <div class="progress-info-card">
+
+                    <div class="progress-info-icon">
+                        📈
+                    </div>
+
+                    <h3>
+                        Regular Assessments
+                    </h3>
+
+                    <p>
+                        Record observations at regular intervals
+                        to understand changes over time.
+                    </p>
+
+                </div>
+
+
+                <div class="progress-info-card">
+
+                    <div class="progress-info-icon">
+                        🎯
+                    </div>
+
+                    <h3>
+                        Individual Support
+                    </h3>
+
+                    <p>
+                        Use assessment information to identify
+                        areas where additional support may help.
+                    </p>
+
+                </div>
+
+
+                <div class="progress-info-card">
+
+                    <div class="progress-info-icon">
+                        📝
+                    </div>
+
+                    <h3>
+                        Progress Notes
+                    </h3>
+
+                    <p>
+                        Maintain useful notes for authorised staff
+                        and future assessments.
+                    </p>
+
+                </div>
+
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Spandhana Care Connect |
+                Academic Project
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

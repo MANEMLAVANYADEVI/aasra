@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Volunteer Management | Spandhana Care Connect</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <div class="container nav-container">
+
+            <a href="index.html" class="logo">
+                <span class="logo-icon">S</span>
+                <span>Spandhana</span>
+            </a>
+
+            <button class="menu-btn" id="menuBtn">☰</button>
+
+            <nav class="navbar">
+
+                <a href="index.html" class="nav-link">Home</a>
+
+                <a href="dashboard.html" class="nav-link">Dashboard</a>
+
+                <a href="beneficiaries.html" class="nav-link">
+                    Beneficiaries
+                </a>
+
+                <a href="healthcare.html" class="nav-link">
+                    Healthcare
+                </a>
+
+                <a href="volunteers.html" class="nav-link">
+                    Volunteers
+                </a>
+
+                <a href="resources.html" class="nav-link">
+                    Resources
+                </a>
+
+                <a href="sos.html" class="nav-link">
+                    Emergency
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- MAIN -->
+
+    <main class="volunteer-page">
+
+        <div class="container">
+
+
+            <!-- PAGE HEADING -->
+
+            <div class="page-heading">
+
+                <div>
+
+                    <span class="section-tag">
+                        Volunteer Management
+                    </span>
+
+                    <h1>
+                        Volunteers & Matching
+                    </h1>
+
+                    <p>
+                        Register volunteers and connect them with beneficiaries
+                        based on their skills, location and availability.
+                    </p>
+
+                </div>
+
+                <button
+                    class="btn btn-primary"
+                    id="showVolunteerBtn">
+
+                    + Add Volunteer
+
+                </button>
+
+            </div>
+
+
+            <!-- VOLUNTEER MATCHING -->
+
+            <section class="matching-section">
+
+                <div class="matching-heading">
+
+                    <div>
+
+                        <span class="section-tag">
+                            Smart Volunteer Matching
+                        </span>
+
+                        <h2>
+                            Find Suitable Volunteers
+                        </h2>
+
+                        <p>
+                            Select the support required and find volunteers
+                            whose skills and availability match the need.
+                        </p>
+
+                    </div>
+
+                    <span class="matching-icon">
+                        🤝
+                    </span>
+
+                </div>
+
+
+                <div class="matching-form">
+
+                    <div class="form-group">
+
+                        <label for="matchBeneficiary">
+                            Beneficiary
+                        </label>
+
+                        <select id="matchBeneficiary">
+
+                            <option value="">
+                                Select beneficiary
+                            </option>
+
+                            <option value="Ananya">
+                                Ananya
+                            </option>
+
+                            <option value="Rahul">
+                                Rahul
+                            </option>
+
+                            <option value="Meera">
+                                Meera
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="matchSkill">
+                            Required Support
+                        </label>
+
+                        <select id="matchSkill">
+
+                            <option value="">
+                                Select support
+                            </option>
+
+                            <option value="Teaching">
+                                Teaching / Education
+                            </option>
+
+                            <option value="Therapy">
+                                Therapy Assistance
+                            </option>
+
+                            <option value="Healthcare">
+                                Healthcare Support
+                            </option>
+
+                            <option value="Sports">
+                                Sports & Activities
+                            </option>
+
+                            <option value="Counselling">
+                                Counselling
+                            </option>
+
+                            <option value="Companionship">
+                                Companionship
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="matchLocation">
+                            Location
+                        </label>
+
+                        <select id="matchLocation">
+
+                            <option value="">
+                                Any location
+                            </option>
+
+                            <option value="Tanuku">
+                                Tanuku
+                            </option>
+
+                            <option value="Palangi">
+                                Palangi
+                            </option>
+
+                            <option value="Velivennu">
+                                Velivennu
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <button
+                        class="btn btn-primary match-btn"
+                        id="findVolunteerBtn">
+
+                        🔎 Find Volunteers
+
+                    </button>
+
+                </div>
+
+
+                <!-- MATCH RESULTS -->
+
+                <div
+                    class="matching-results"
+                    id="matchingResults">
+
+                    <div class="match-result">
+
+                        <div class="volunteer-avatar">
+                            P
+                        </div>
+
+                        <div class="match-details">
+
+                            <h3>
+                                Priya Sharma
+                            </h3>
+
+                            <p>
+                                📍 Tanuku &nbsp; • &nbsp;
+                                📚 Teaching
+                            </p>
+
+                            <p>
+                                Available: Weekends
+                            </p>
+
+                        </div>
+
+                        <span class="match-score">
+                            95% Match
+                        </span>
+
+                    </div>
+
+
+                    <div class="match-result">
+
+                        <div class="volunteer-avatar">
+                            A
+                        </div>
+
+                        <div class="match-details">
+
+                            <h3>
+                                Arjun Kumar
+                            </h3>
+
+                            <p>
+                                📍 Tanuku &nbsp; • &nbsp;
+                                🏃 Sports & Activities
+                            </p>
+
+                            <p>
+                                Available: Evenings
+                            </p>
+
+                        </div>
+
+                        <span class="match-score">
+                            88% Match
+                        </span>
+
+                    </div>
+
+
+                    <div class="match-result">
+
+                        <div class="volunteer-avatar">
+                            S
+                        </div>
+
+                        <div class="match-details">
+
+                            <h3>
+                                Sneha Reddy
+                            </h3>
+
+                            <p>
+                                📍 Palangi &nbsp; • &nbsp;
+                                🩺 Healthcare Support
+                            </p>
+
+                            <p>
+                                Available: Monday - Friday
+                            </p>
+
+                        </div>
+
+                        <span class="match-score">
+                            82% Match
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ADD VOLUNTEER FORM -->
+
+            <section
+                class="volunteer-form-section"
+                id="volunteerFormSection">
+
+                <div class="form-header">
+
+                    <span class="section-tag">
+                        New Volunteer
+                    </span>
+
+                    <h2>
+                        Register Volunteer
+                    </h2>
+
+                </div>
+
+
+                <form id="volunteerForm">
+
+
+                    <div class="form-group">
+
+                        <label for="volunteerName">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="volunteerName"
+                            placeholder="Enter full name"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="volunteerPhone">
+                            Phone Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="volunteerPhone"
+                            placeholder="Enter phone number"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="volunteerEmail">
+                            Email
+                        </label>
+
+                        <input
+                            type="email"
+                            id="volunteerEmail"
+                            placeholder="Enter email">
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="volunteerLocation">
+                            Location
+                        </label>
+
+                        <input
+                            type="text"
+                            id="volunteerLocation"
+                            placeholder="Enter location"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="volunteerSkills">
+                            Skills
+                        </label>
+
+                        <input
+                            type="text"
+                            id="volunteerSkills"
+                            placeholder="Example: Teaching, Healthcare"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="volunteerAvailability">
+                            Availability
+                        </label>
+
+                        <select id="volunteerAvailability" required>
+
+                            <option value="">
+                                Select availability
+                            </option>
+
+                            <option value="Weekdays">
+                                Weekdays
+                            </option>
+
+                            <option value="Weekends">
+                                Weekends
+                            </option>
+
+                            <option value="Evenings">
+                                Evenings
+                            </option>
+
+                            <option value="Flexible">
+                                Flexible
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="volunteerExperience">
+                            Experience
+                        </label>
+
+                        <select id="volunteerExperience">
+
+                            <option value="">
+                                Select experience
+                            </option>
+
+                            <option value="Beginner">
+                                Beginner
+                            </option>
+
+                            <option value="Intermediate">
+                                Intermediate
+                            </option>
+
+                            <option value="Experienced">
+                                Experienced
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="volunteerInterest">
+                            Area of Interest
+                        </label>
+
+                        <select id="volunteerInterest">
+
+                            <option value="">
+                                Select area
+                            </option>
+
+                            <option value="Teaching">
+                                Teaching
+                            </option>
+
+                            <option value="Therapy">
+                                Therapy Assistance
+                            </option>
+
+                            <option value="Healthcare">
+                                Healthcare
+                            </option>
+
+                            <option value="Sports">
+                                Sports
+                            </option>
+
+                            <option value="Counselling">
+                                Counselling
+                            </option>
+
+                            <option value="Companionship">
+                                Companionship
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group full-width">
+
+                        <label for="volunteerAdditional">
+                            Additional Information
+                        </label>
+
+                        <textarea
+                            id="volunteerAdditional"
+                            rows="4"
+                            placeholder="Additional information"></textarea>
+
+                    </div>
+
+
+                    <div class="form-buttons">
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary">
+
+                            Register Volunteer
+
+                        </button>
+
+                        <button
+                            type="button"
+                            class="btn btn-secondary"
+                            id="cancelVolunteerBtn">
+
+                            Cancel
+
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </section>
+
+
+            <!-- VOLUNTEER DIRECTORY -->
+
+            <section class="volunteer-list-section">
+
+                <div class="list-header">
+
+                    <div>
+
+                        <span class="section-tag">
+                            Volunteer Directory
+                        </span>
+
+                        <h2>
+                            Registered Volunteers
+                        </h2>
+
+                    </div>
+
+
+                    <div class="search-box">
+
+                        <input
+                            type="text"
+                            id="searchVolunteer"
+                            placeholder="Search volunteer...">
+
+                    </div>
+
+                </div>
+
+
+                <div class="volunteer-table">
+
+                    <div class="volunteer-table-header">
+
+                        <span>Name</span>
+
+                        <span>Skills</span>
+
+                        <span>Location</span>
+
+                        <span>Availability</span>
+
+                        <span>Interest</span>
+
+                        <span>Status</span>
+
+                    </div>
+
+
+                    <div class="volunteer-row">
+
+                        <span>
+                            Priya Sharma
+                        </span>
+
+                        <span>
+                            Teaching
+                        </span>
+
+                        <span>
+                            Tanuku
+                        </span>
+
+                        <span>
+                            Weekends
+                        </span>
+
+                        <span>
+                            Education
+                        </span>
+
+                        <span class="status active">
+                            Active
+                        </span>
+
+                    </div>
+
+
+                    <div class="volunteer-row">
+
+                        <span>
+                            Arjun Kumar
+                        </span>
+
+                        <span>
+                            Sports
+                        </span>
+
+                        <span>
+                            Tanuku
+                        </span>
+
+                        <span>
+                            Evenings
+                        </span>
+
+                        <span>
+                            Activities
+                        </span>
+
+                        <span class="status active">
+                            Active
+                        </span>
+
+                    </div>
+
+
+                    <div class="volunteer-row">
+
+                        <span>
+                            Sneha Reddy
+                        </span>
+
+                        <span>
+                            Healthcare
+                        </span>
+
+                        <span>
+                            Palangi
+                        </span>
+
+                        <span>
+                            Weekdays
+                        </span>
+
+                        <span>
+                            Healthcare
+                        </span>
+
+                        <span class="status active">
+                            Active
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- INFO CARDS -->
+
+            <section class="volunteer-info">
+
+                <div class="volunteer-info-card">
+
+                    <div class="volunteer-info-icon">
+                        🤝
+                    </div>
+
+                    <h3>
+                        Volunteer Matching
+                    </h3>
+
+                    <p>
+                        Match volunteers with beneficiaries
+                        according to skills, location and availability.
+                    </p>
+
+                </div>
+
+
+                <div class="volunteer-info-card">
+
+                    <div class="volunteer-info-icon">
+                        🎯
+                    </div>
+
+                    <h3>
+                        Skill-Based Support
+                    </h3>
+
+                    <p>
+                        Identify volunteers who can provide
+                        education, therapy, healthcare or activities.
+                    </p>
+
+                </div>
+
+
+                <div class="volunteer-info-card">
+
+                    <div class="volunteer-info-icon">
+                        📅
+                    </div>
+
+                    <h3>
+                        Availability
+                    </h3>
+
+                    <p>
+                        Track when volunteers are available
+                        to support NGO activities.
+                    </p>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Spandhana Care Connect | Academic Project
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

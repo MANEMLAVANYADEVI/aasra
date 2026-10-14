@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Beneficiaries | Spandhana Care Connect</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="container nav-container">
+
+            <a href="index.html" class="logo">
+
+                <span class="logo-icon">
+                    S
+                </span>
+
+                <span>
+                    Spandhana
+                </span>
+
+            </a>
+
+
+            <nav class="navbar">
+
+                <a href="index.html" class="nav-link">
+                    Home
+                </a>
+
+                <a href="dashboard.html" class="nav-link">
+                    Dashboard
+                </a>
+
+                <a href="beneficiaries.html" class="nav-link">
+                    Beneficiaries
+                </a>
+
+                <a href="healthcare.html" class="nav-link">
+                    Healthcare
+                </a>
+
+                <a href="volunteers.html" class="nav-link">
+                    Volunteers
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="beneficiary-page">
+
+        <div class="container">
+
+
+            <!-- PAGE HEADING -->
+
+            <div class="beneficiary-heading">
+
+                <div>
+
+                    <span class="section-tag">
+                        Beneficiary Management
+                    </span>
+
+                    <h1>
+                        Beneficiaries
+                    </h1>
+
+                    <p>
+                        Add, view and manage beneficiary information
+                        and support requirements.
+                    </p>
+
+                </div>
+
+
+                <button
+                    class="btn btn-primary"
+                    id="showFormBtn">
+
+                    + Add Beneficiary
+
+                </button>
+
+            </div>
+
+
+
+            <!-- ================= ADD BENEFICIARY FORM ================= -->
+
+            <section
+                class="beneficiary-form-section"
+                id="beneficiaryFormSection">
+
+                <div class="form-header">
+
+                    <div>
+
+                        <span class="section-tag">
+                            New Record
+                        </span>
+
+                        <h2>
+                            Add Beneficiary
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <form id="beneficiaryForm">
+
+
+                    <!-- NAME -->
+
+                    <div class="form-group">
+
+                        <label for="beneficiaryName">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="beneficiaryName"
+                            placeholder="Enter full name"
+                            required>
+
+                    </div>
+
+
+                    <!-- AGE -->
+
+                    <div class="form-group">
+
+                        <label for="beneficiaryAge">
+                            Age
+                        </label>
+
+                        <input
+                            type="number"
+                            id="beneficiaryAge"
+                            placeholder="Enter age"
+                            min="1"
+                            max="100"
+                            required>
+
+                    </div>
+
+
+                    <!-- GENDER -->
+
+                    <div class="form-group">
+
+                        <label for="beneficiaryGender">
+                            Gender
+                        </label>
+
+                        <select
+                            id="beneficiaryGender"
+                            required>
+
+                            <option value="">
+                                Select gender
+                            </option>
+
+                            <option value="Female">
+                                Female
+                            </option>
+
+                            <option value="Male">
+                                Male
+                            </option>
+
+                            <option value="Other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- LOCATION -->
+
+                    <div class="form-group">
+
+                        <label for="beneficiaryLocation">
+                            Location
+                        </label>
+
+                        <input
+                            type="text"
+                            id="beneficiaryLocation"
+                            placeholder="Enter location"
+                            required>
+
+                    </div>
+
+
+                    <!-- DISABILITY -->
+
+                    <div class="form-group">
+
+                        <label for="disabilityType">
+                            Disability / Support Type
+                        </label>
+
+                        <select
+                            id="disabilityType"
+                            required>
+
+                            <option value="">
+                                Select type
+                            </option>
+
+                            <option value="Physical Support">
+                                Physical Support
+                            </option>
+
+                            <option value="Intellectual Support">
+                                Intellectual Support
+                            </option>
+
+                            <option value="Developmental Support">
+                                Developmental Support
+                            </option>
+
+                            <option value="Multiple Support Needs">
+                                Multiple Support Needs
+                            </option>
+
+                            <option value="Other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- GUARDIAN -->
+
+                    <div class="form-group">
+
+                        <label for="guardianName">
+                            Guardian Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="guardianName"
+                            placeholder="Enter guardian name"
+                            required>
+
+                    </div>
+
+
+                    <!-- PHONE -->
+
+                    <div class="form-group">
+
+                        <label for="guardianPhone">
+                            Guardian Phone
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="guardianPhone"
+                            placeholder="Enter phone number"
+                            required>
+
+                    </div>
+
+
+                    <!-- EDUCATION -->
+
+                    <div class="form-group">
+
+                        <label for="education">
+                            Education
+                        </label>
+
+                        <input
+                            type="text"
+                            id="education"
+                            placeholder="Example: School / College / Not Applicable">
+
+                    </div>
+
+
+                    <!-- SKILLS -->
+
+                    <div class="form-group">
+
+                        <label for="skills">
+                            Skills / Interests
+                        </label>
+
+                        <input
+                            type="text"
+                            id="skills"
+                            placeholder="Example: Drawing, Music, Sports">
+
+                    </div>
+
+
+                    <!-- SUPPORT -->
+
+                    <div class="form-group full-width">
+
+                        <label for="supportRequired">
+                            Support Required
+                        </label>
+
+                        <textarea
+                            id="supportRequired"
+                            rows="4"
+                            placeholder="Describe the support required"></textarea>
+
+                    </div>
+
+
+                    <!-- BUTTONS -->
+
+                    <div class="form-buttons">
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary">
+
+                            Save Beneficiary
+
+                        </button>
+
+                        <button
+                            type="button"
+                            class="btn btn-secondary"
+                            id="cancelFormBtn">
+
+                            Cancel
+
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </section>
+
+
+
+            <!-- ================= SEARCH ================= -->
+
+            <section class="beneficiary-list-section">
+
+                <div class="list-header">
+
+                    <div>
+
+                        <span class="section-tag">
+                            Records
+                        </span>
+
+                        <h2>
+                            Beneficiary List
+                        </h2>
+
+                    </div>
+
+
+                    <div class="search-box">
+
+                        <input
+                            type="text"
+                            id="searchBeneficiary"
+                            placeholder="Search beneficiary...">
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ================= TABLE ================= -->
+
+                <div class="beneficiary-table">
+
+                    <div class="beneficiary-table-header">
+
+                        <span>
+                            Name
+                        </span>
+
+                        <span>
+                            Age
+                        </span>
+
+                        <span>
+                            Location
+                        </span>
+
+                        <span>
+                            Support Type
+                        </span>
+
+                        <span>
+                            Status
+                        </span>
+
+                    </div>
+
+
+                    <!-- SAMPLE RECORD 1 -->
+
+                    <div class="beneficiary-row">
+
+                        <span>
+                            Ananya
+                        </span>
+
+                        <span>
+                            14
+                        </span>
+
+                        <span>
+                            Tanuku
+                        </span>
+
+                        <span>
+                            Developmental Support
+                        </span>
+
+                        <span class="status active">
+                            Active
+                        </span>
+
+                    </div>
+
+
+                    <!-- SAMPLE RECORD 2 -->
+
+                    <div class="beneficiary-row">
+
+                        <span>
+                            Rahul
+                        </span>
+
+                        <span>
+                            17
+                        </span>
+
+                        <span>
+                            Tanuku
+                        </span>
+
+                        <span>
+                            Physical Support
+                        </span>
+
+                        <span class="status active">
+                            Active
+                        </span>
+
+                    </div>
+
+
+                    <!-- SAMPLE RECORD 3 -->
+
+                    <div class="beneficiary-row">
+
+                        <span>
+                            Meera
+                        </span>
+
+                        <span>
+                            12
+                        </span>
+
+                        <span>
+                            Palangi
+                        </span>
+
+                        <span>
+                            Intellectual Support
+                        </span>
+
+                        <span class="status active">
+                            Active
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Spandhana Care Connect |
+                Academic Project
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

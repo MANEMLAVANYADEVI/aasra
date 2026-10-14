@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Emergency Support | Spandhana Care Connect</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <div class="container nav-container">
+
+            <a href="index.html" class="logo">
+
+                <span class="logo-icon">S</span>
+
+                <span>Spandhana</span>
+
+            </a>
+
+
+            <nav class="navbar">
+
+                <a href="index.html" class="nav-link">
+                    Home
+                </a>
+
+                <a href="dashboard.html" class="nav-link">
+                    Dashboard
+                </a>
+
+                <a href="beneficiaries.html" class="nav-link">
+                    Beneficiaries
+                </a>
+
+                <a href="healthcare.html" class="nav-link">
+                    Healthcare
+                </a>
+
+                <a href="volunteers.html" class="nav-link">
+                    Volunteers
+                </a>
+
+                <a href="resources.html" class="nav-link">
+                    Resources
+                </a>
+
+                <a href="sos.html" class="nav-link">
+                    Emergency
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- MAIN -->
+
+    <main class="sos-page">
+
+        <div class="container">
+
+
+            <!-- PAGE HEADING -->
+
+            <div class="sos-heading">
+
+                <div>
+
+                    <span class="section-tag">
+                        Emergency Support
+                    </span>
+
+                    <h1>
+                        SOS & Emergency Contacts
+                    </h1>
+
+                    <p>
+                        Quickly access authorised emergency
+                        contacts and important support information.
+                    </p>
+
+                </div>
+
+
+                <button
+                    class="btn btn-primary"
+                    id="showEmergencyBtn">
+
+                    + Add Emergency Contact
+
+                </button>
+
+            </div>
+
+
+            <!-- EMERGENCY FORM -->
+
+            <section
+                class="emergency-form-section"
+                id="emergencyFormSection">
+
+                <div class="form-header">
+
+                    <span class="section-tag">
+                        Emergency Contact
+                    </span>
+
+                    <h2>
+                        Add Emergency Contact
+                    </h2>
+
+                </div>
+
+
+                <form id="emergencyForm">
+
+
+                    <!-- BENEFICIARY -->
+
+                    <div class="form-group">
+
+                        <label for="emergencyBeneficiary">
+                            Beneficiary Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="emergencyBeneficiary"
+                            placeholder="Enter beneficiary name"
+                            required>
+
+                    </div>
+
+
+                    <!-- GUARDIAN -->
+
+                    <div class="form-group">
+
+                        <label for="guardianName">
+                            Guardian / Emergency Contact
+                        </label>
+
+                        <input
+                            type="text"
+                            id="guardianName"
+                            placeholder="Enter contact name"
+                            required>
+
+                    </div>
+
+
+                    <!-- PHONE -->
+
+                    <div class="form-group">
+
+                        <label for="emergencyPhone">
+                            Emergency Phone
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="emergencyPhone"
+                            placeholder="Enter phone number"
+                            required>
+
+                    </div>
+
+
+                    <!-- RELATIONSHIP -->
+
+                    <div class="form-group">
+
+                        <label for="relationship">
+                            Relationship
+                        </label>
+
+                        <select
+                            id="relationship"
+                            required>
+
+                            <option value="">
+                                Select relationship
+                            </option>
+
+                            <option value="Parent">
+                                Parent
+                            </option>
+
+                            <option value="Guardian">
+                                Guardian
+                            </option>
+
+                            <option value="Sibling">
+                                Sibling
+                            </option>
+
+                            <option value="Relative">
+                                Relative
+                            </option>
+
+                            <option value="Other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- ALTERNATE PHONE -->
+
+                    <div class="form-group">
+
+                        <label for="alternatePhone">
+                            Alternate Phone
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="alternatePhone"
+                            placeholder="Optional">
+
+                    </div>
+
+
+                    <!-- EMERGENCY TYPE -->
+
+                    <div class="form-group">
+
+                        <label for="emergencyType">
+                            Emergency Support Type
+                        </label>
+
+                        <select
+                            id="emergencyType"
+                            required>
+
+                            <option value="">
+                                Select type
+                            </option>
+
+                            <option value="Medical">
+                                Medical
+                            </option>
+
+                            <option value="Transport">
+                                Transport
+                            </option>
+
+                            <option value="Family Contact">
+                                Family Contact
+                            </option>
+
+                            <option value="Other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- IMPORTANT INFORMATION -->
+
+                    <div class="form-group full-width">
+
+                        <label for="emergencyNotes">
+                            Important Information
+                        </label>
+
+                        <textarea
+                            id="emergencyNotes"
+                            rows="4"
+                            placeholder="Add relevant emergency information">
+                        </textarea>
+
+                    </div>
+
+
+                    <!-- BUTTONS -->
+
+                    <div class="form-buttons">
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary">
+
+                            Save Contact
+
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="btn btn-secondary"
+                            id="cancelEmergencyBtn">
+
+                            Cancel
+
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </section>
+
+
+            <!-- SOS QUICK ACTION -->
+
+            <section class="sos-alert-section">
+
+                <div class="sos-alert-card">
+
+                    <div class="sos-alert-icon">
+                        🚨
+                    </div>
+
+                    <div>
+
+                        <h2>
+                            Emergency Assistance
+                        </h2>
+
+                        <p>
+                            In a real deployment, authorised NGO
+                            staff could use this area to quickly
+                            contact the appropriate guardian or
+                            emergency support service.
+                        </p>
+
+                    </div>
+
+                    <button
+                        class="sos-button"
+                        id="sosButton">
+
+                        ACTIVATE SOS
+
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <!-- CONTACT LIST -->
+
+            <section class="emergency-list-section">
+
+                <div class="list-header">
+
+                    <div>
+
+                        <span class="section-tag">
+                            Emergency Directory
+                        </span>
+
+                        <h2>
+                            Emergency Contacts
+                        </h2>
+
+                    </div>
+
+
+                    <div class="search-box">
+
+                        <input
+                            type="text"
+                            id="searchEmergency"
+                            placeholder="Search contacts...">
+
+                    </div>
+
+                </div>
+
+
+                <div class="emergency-table">
+
+
+                    <!-- HEADER -->
+
+                    <div class="emergency-table-header">
+
+                        <span>Beneficiary</span>
+
+                        <span>Contact</span>
+
+                        <span>Phone</span>
+
+                        <span>Relationship</span>
+
+                        <span>Support Type</span>
+
+                        <span>Status</span>
+
+                    </div>
+
+
+                    <!-- SAMPLE CONTACT -->
+
+                    <div class="emergency-row">
+
+                        <span>
+                            Ananya
+                        </span>
+
+                        <span>
+                            Parent
+                        </span>
+
+                        <span>
+                            9876543210
+                        </span>
+
+                        <span>
+                            Mother
+                        </span>
+
+                        <span>
+                            Medical
+                        </span>
+
+                        <span class="status active">
+                            Available
+                        </span>
+
+                    </div>
+
+
+                    <!-- SAMPLE CONTACT -->
+
+                    <div class="emergency-row">
+
+                        <span>
+                            Rahul
+                        </span>
+
+                        <span>
+                            Guardian
+                        </span>
+
+                        <span>
+                            9876543211
+                        </span>
+
+                        <span>
+                            Guardian
+                        </span>
+
+                        <span>
+                            Transport
+                        </span>
+
+                        <span class="status active">
+                            Available
+                        </span>
+
+                    </div>
+
+
+                    <!-- SAMPLE CONTACT -->
+
+                    <div class="emergency-row">
+
+                        <span>
+                            Meera
+                        </span>
+
+                        <span>
+                            Parent
+                        </span>
+
+                        <span>
+                            9876543212
+                        </span>
+
+                        <span>
+                            Father
+                        </span>
+
+                        <span>
+                            Family Contact
+                        </span>
+
+                        <span class="status active">
+                            Available
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+            <!-- INFORMATION CARDS -->
+
+            <section class="sos-info">
+
+
+                <div class="sos-info-card">
+
+                    <div class="sos-info-icon">
+                        📞
+                    </div>
+
+                    <h3>
+                        Quick Contact
+                    </h3>
+
+                    <p>
+                        Keep important guardian and emergency
+                        contact information organised.
+                    </p>
+
+                </div>
+
+
+                <div class="sos-info-card">
+
+                    <div class="sos-info-icon">
+                        🚑
+                    </div>
+
+                    <h3>
+                        Emergency Support
+                    </h3>
+
+                    <p>
+                        Help authorised staff identify the
+                        appropriate type of emergency assistance.
+                    </p>
+
+                </div>
+
+
+                <div class="sos-info-card">
+
+                    <div class="sos-info-icon">
+                        🔐
+                    </div>
+
+                    <h3>
+                        Privacy First
+                    </h3>
+
+                    <p>
+                        Emergency information should only be
+                        accessible to authorised NGO personnel.
+                    </p>
+
+                </div>
+
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Spandhana Care Connect |
+                Academic Project
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
